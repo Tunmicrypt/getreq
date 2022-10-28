@@ -14,7 +14,7 @@ app.get("/", function(req, res){
 })
 
 
-app.listen(3000, function(error){
+app.listen( process.env.PORT || 3000, function(error){
   if(!error) {console.log("server started at port 3000")}
   else console.log("error occured");;
 })
